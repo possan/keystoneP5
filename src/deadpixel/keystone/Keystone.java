@@ -22,10 +22,6 @@ import java.io.OutputStream;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import javax.xml.parsers.ParserConfigurationException;
-
-import org.xml.sax.SAXException;
-
 import processing.core.*;
 import processing.data.XML;
 import processing.event.MouseEvent;
@@ -161,8 +157,7 @@ public class Keystone {
 
 		// write the settings to keystone.xml in the sketch's data folder
 		try {
-			OutputStream stream = parent.createOutput(parent.dataPath(filename));
-			root.save(stream); 
+			parent.saveXML(root, parent.dataPath(filename));
 		} catch (Exception e) {
 			PApplet.println(e.getStackTrace());
 		}
@@ -183,7 +178,7 @@ public class Keystone {
 	public void load(String filename) {
 		XML root;
 		try {
-			root = new XML(parent, parent.dataPath(filename));
+			root = parent.loadXML(parent.dataPath(filename));
 		} catch (Exception e) {
 			PApplet.println("Keystone: FAILED TO LOAD LAYOUT: " + filename);
 			return;
