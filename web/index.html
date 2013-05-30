@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>##library.name##</title>
+<meta name="description" content="a library for the programming environment processing" />
+<meta name="keywords" content="processing.org, library" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="ROBOTS" content="index,follow,archive" />
+<meta http-equiv="imagetoolbar" content="false" />
+<meta name="MSSmartTagsPreventParsing" content="true" />
+<meta name="author" content="##author##" />
+<meta name="Rating" content="General" />
+<meta name="revisit-after" content="7 Days" />
+<meta name="doc-class" content="Living Document" />
+<link rel="stylesheet" type="text/css" href="./stylesheet.css">
+</head>
+<body>
+	<div id="container">
+	
+		<div id="header">
+			<a href="http://keystonep5.sourceforge.net"><img src="keystone.png" alt="#library.name"/></a>
+		</div>
+		
+		<div id="menu" class="clear">
+			<ul>
+				<li><a href="#about">About</a> \ </li>
+				<li><a href="#download">Download</a> \ </li>
+				<li><a href="#download">Installation</a> \ </li>
+				<li><a href="#examples">Examples</a> \ </li>
+				<li><a href="./reference/index.html" target="_blank">Reference</a></li>
+				<!-- <li><a href="#demos">Demos</a> \ </li> -->				
+				<!-- <li><a href="#misc">Misc</a> \ </li> -->
+				<!-- <li><a href="#images">Images</a> \ </li> -->
+			</ul>
+		</div>
+		
+		<div id="content" class="clear">
+			
+			<div id="about">
+			<h2>##library.name##</h2>
+			<p>
+			A library by <a href="##yourLink##">##author.name##</a> for the programming environment <a href="http://www.processing.org" target="_blank">Processing</a>. Last update, ##date##.
+			</p>
+			<p>
+		    Keystone
+is a video projection mapping library for Processing. Right now it
+allows you to warp your Processing sketches onto any flat surface by
+using corner pin keystoning, regardless of your projector's position
+and orientation.&nbsp;The goal is to eventually expand this library to
+enable more advanced projection mapping, such as projecting on 3D
+models or curved surfaces and edge blending of multiple projector
+screens.&nbsp;<br /><br />
+
+This is a <i>very</i> alpha release, which means the API could (and probably will) change in future releases. Please
+send feedback or feature requests!<br />
+
+<br />
+<b>Thank you to the following contributors for features added to Keystone:</b><br>
+- improved perspective calculation using JAI (Eduardo Moriana)<br />
+- fixed the XML load/save functionality (Andres Colubri)<br />			
+			</p>
+			</div>
+			
+			<div> 
+			<object width="400" height="300"><param name="allowfullscreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="movie" value="http://vimeo.com/moogaloop.swf?clip_id=6483547&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" /><embed src="http://vimeo.com/moogaloop.swf?clip_id=6483547&amp;server=vimeo.com&amp;show_title=1&amp;show_byline=1&amp;show_portrait=0&amp;color=&amp;fullscreen=1" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="400" height="300"></embed></object>
+			</div>
+			
+			<p>&nbsp;</p>
+			 
+			<div id="download" class="clear">
+			<h2>Download</h2>
+			<p>
+			Download ##library.name## version ##library.prettyVersion## (##library.version##) in 
+			<a href="./download/##library.name##-##library.version##.zip">.zip format</a>.
+			<br>
+			For older versions of Processing (1.5.1 and lower), the previous version 
+			is available <a href="./download/keystone-2.zip">.here</a>.<br>		
+			</p>
+			<h2>Installation</h2>
+			<p>
+			Unzip and put the extracted ##library.name## folder into the libraries folder of your processing sketches. Reference and examples are included in the ##library.name## folder.
+			</p>
+			<p>If you are running this on Windows or Linux, you will need to also 
+			install the <a href="http://download.java.net/media/jai/builds/release/1_1_3/">Java Advanced Imaging library</a> for your platform.</p> 			
+			</div>	
+			
+			
+			<div id="resources">
+			<p><strong>Keywords</strong> ##library.keywords##</p>
+			<p><strong>Reference</strong>. Have a look at the javadoc reference <a href="./reference/index.html" target="_blank">here</a>. a copy of the reference is included in the .zip as well.</p>		
+			<p><strong>Source</strong>. The source code of ##library.name## is available at <a href="##source.url##">##source.host##</a>, and its repository can be browsed <a href="##source.repository##" target="_blank">here</a>.</p>			
+			</div>
+			
+			<div id="examples" class="clear">
+			<h2>Examples</h2>
+			<p>Find a list of examples in the current distribution of ##library.name##, or have a look at them by following the links below.</p>
+			<ul>
+			##examples##
+			</ul>
+			</div>
+			
+			
+			<div id="info">
+			<h2>Tested</h2>
+			<p>
+			<!-- on which platform has the library been tested? -->
+			<strong>Platform</strong> ##tested.platform##
+			
+			<!-- which processing version did you use for testing your library? -->
+			<br /><strong>Processing</strong> ##tested.processingVersion##
+			
+			<!-- does your library depend on any other library or framework? -->
+			<br /><strong>Dependencies</strong> ##library.dependencies##
+			</p>
+			</div>
+		
+			
+			<!-- use the demos section for a list of applets run in a browser. -->
+			<!--
+			<div id="demos" class="clear">
+				<h2>demos</h2>
+				<p>
+				find a list of online applet demos below.
+				
+				<ul>
+					<li><a href="./applets/demo/index.html">demo</a></li>
+				</ul>
+				</p>
+			</div>
+			-->
+			
+			<!-- use the misc section for other relevant information. Activate the link to the misc section in the menu above. -->
+			<!--
+			<div id="misc" class="clear">
+				<p></p>
+			</div>
+			-->
+			
+			<!-- use the images/screenshots section. Activate the link to the misc section in the menu above. -->
+			<!--
+			<div id="images" class="clear">
+			</div>
+			-->
+			
+			
+			<br class="clear" />
+		</div>
+		
+		<div id="footer">
+			<p>by ##author.name##, ##project.copyright##.</p>
+		</div>
+	</div>
+</body>
+</html>
